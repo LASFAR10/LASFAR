@@ -71,57 +71,93 @@
         .social a {
             margin: 0 15px;
             color: #007bff;
-            font-size: 2em; /* Increase size of the icons */
+            font-size: 2em;
             text-decoration: none;
         }
 
         .social a:hover {
             color: #0056b3;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 95%;
+            }
+
+            .pricing-card {
+                max-width: 45%;
+                margin: 10px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1, h2 {
+                font-size: 1.5em;
+            }
+
+            .pricing-card {
+                max-width: 100%;
+                margin: 10px 0;
+                padding: 15px;
+            }
+
+            .pricing-card h2 {
+                font-size: 1.2em;
+            }
+
+            .pricing-card p {
+                font-size: 1em;
+            }
+
+            .social a {
+                font-size: 1.5em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="page-background">
         <div class="container">
-            <center><h1>اطلب الان </h1>
-                <h2>اختر نوعك المفظل </h2>
+            <center>
+                <h1>اطلب الان</h1>
+                <h2>اختر نوعك المفظل</h2>
             </center>
 
             <div class="pricing">
                 <div class="pricing-card">
-                    <h2>البيض البلدي والرومي </h2>
+                    <h2>البيض البلدي والرومي</h2>
                     <p>2/1.3 درهم</p>
                     <p>البيض الرومي والبلدي بالجملة والتقسيط</p>
                 </div>
                 <div class="pricing-card">
                     <h2>العسل بكل انواعه</h2>
-                    <p>ابتداء من 40 درهم </p>
-                    <p>العسل ديال العلف وكذلك العسل الحر
-                        بالجملة والتقسيط </p>
+                    <p>ابتداء من 40 درهم</p>
+                    <p>العسل ديال العلف وكذلك العسل الحر بالجملة والتقسيط</p>
                 </div>
                 <div class="pricing-card">
-                    <h2>الزيت البلدية </h2>
-                    <p>ابتداء من 70 درهم </p>
-                    <p>الزيت البلدية تاع العام بالجملة والتقسيط </p>
+                    <h2>الزيت البلدية</h2>
+                    <p>ابتداء من 70 درهم</p>
+                    <p>الزيت البلدية تاع العام بالجملة والتقسيط</p>
                 </div>
             </div>
+
             <div class="contact">
-                <center><h2>اتصل الان</h2>
-                    <h1><strong>06 62 74 19 89</strong></h1></center>
+                <center>
+                    <h2>اتصل الان</h2>
+                    <h1><strong>06 62 74 19 89</strong></h1>
+                </center>
             </div>
 
             <div class="social">
-                <center><h2>تابعنا على منصاتنا على مواقع التواصل </h2>
+                <center>
+                    <h2>تابعنا على منصاتنا على مواقع التواصل</h2>
                     <p>ابق على اتصال واحصل على تحديثات حول أحدث عروضنا</p>
                     <a href="https://www.facebook.com/share/12CL5oCqwA8/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    
                     <a href="https://www.instagram.com/mstfbnlhsyn?igsh=MTJmaGY2aGViMWhveQ==" target="_blank"><i class="fab fa-instagram"></i></a>
-                 
                 </center>
             </div>
         </div>
     </div>
 </body>
 </html>
-
-
