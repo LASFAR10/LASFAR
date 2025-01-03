@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر ابن الحسين </title>
+    <link rel="icon" href="AGG.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cdce9b;
+        }
+
+        header {
+            background-color: #feffa9;
+            color: rgb(22, 19, 19);
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4.5em;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .egg-card {
+            background-color: white;
+            border: 5px solid #000000;
+            border-radius: 30px;
+            margin: 10px;
+            width: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .egg-card:hover {
+            transform: scale(1.05);
+        }
+
+        .egg-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .egg-card .info {
+            padding: 15px;
+        }
+
+        .egg-card .info h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .egg-card .info p {
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .egg-card .info .price {
+            font-size: 1.2em;
+            color: #28a745;
+            margin: 10px 0;
+        }
+
+        .egg-card .info button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+        }
+
+        .egg-card .info button:hover {
+            background-color: #0056b3;
+        }
+        .top-left-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 245px; /* Set your desired width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <img src="seller.avif" alt="Top Left Image" class="top-left-image">
+    <header>
+        <h1>متجر لبيع البيض</h1>
+        <h2>مصطفى بن الحسين</h2>
+    </header>
+
+    <div class="container">
+        <!-- Example egg cards -->
+        <div class="egg-card">
+            <img src="00.jpg" alt="Eggs">
+            <div class="info">
+                <h3>البيض البلدي والرومي</h3>
+                <p>البيض الرومي والبلدي بالجملة والتقسيط</p>
+                <p class="price">ابتداءمن 1 درهم </p>
+                <button onclick="location.href='pricing.html'">اطلب الان</button>
+            </div>
+        </div>
+
+        <div class="egg-card">
+            <img src="honey.jpg" alt="Eggs">
+            <div class="info">
+                <h3>العسل بكل انواعه </h3>
+                <p>عسل تاع العلف والعسل الحر</p>
+                <p class="price">الثمن على حساب النوع المطلوب </p>
+                <button onclick="location.href='pricing.html'">اطلب الان</button>
+            </div>
+        </div>
+        <div class="egg-card">
+            <img src="oil.jpg" alt="Eggs">
+            <div class="info">
+                <h3>الزيت البلدية</h3>
+                <p>بكل انواعها واشكالها</p>
+                <p class="price">الثمن على حسب النوع المطلوب </p>
+                <button onclick="location.href='pricing.html'">اطلب الان</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
